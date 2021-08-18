@@ -16,5 +16,22 @@ namespace Curso_WindowsForms
         {
             InitializeComponent();
         }
+
+        private void labelMaius_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonReset_Click(object sender, EventArgs e)
+        {//limpa as duas caixas com infomações
+            textBox1.Clear();
+            txt_Input.Clear();
+        }
+
+        private void buttonInsere_Click(object sender, EventArgs e)
+        {// Botão apenas idealizado, será criado uma lista para guardar esses dados
+            textBox1.Text = txt_Input.Text.ToString();
+            txt_Input.Clear();
+        }
     }
 }
