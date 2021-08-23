@@ -35,8 +35,7 @@ namespace Curso_WindowsForms
             this.labelMinus = new System.Windows.Forms.Label();
             this.labelMaius = new System.Windows.Forms.Label();
             this.labelUpper = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.buttonInsere = new System.Windows.Forms.Button();
+            this.labelLower = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txt_Input
@@ -45,6 +44,7 @@ namespace Curso_WindowsForms
             this.txt_Input.Name = "txt_Input";
             this.txt_Input.Size = new System.Drawing.Size(100, 20);
             this.txt_Input.TabIndex = 0;
+            this.txt_Input.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_Input_KeyDown);
             // 
             // textBox1
             // 
@@ -73,7 +73,7 @@ namespace Curso_WindowsForms
             this.labelMinus.Name = "labelMinus";
             this.labelMinus.Size = new System.Drawing.Size(35, 13);
             this.labelMinus.TabIndex = 4;
-            this.labelMinus.Text = "Minus";
+            this.labelMinus.Text = "Maius";
             // 
             // labelMaius
             // 
@@ -82,7 +82,7 @@ namespace Curso_WindowsForms
             this.labelMaius.Name = "labelMaius";
             this.labelMaius.Size = new System.Drawing.Size(35, 13);
             this.labelMaius.TabIndex = 5;
-            this.labelMaius.Text = "Maius";
+            this.labelMaius.Text = "Minus";
             this.labelMaius.Click += new System.EventHandler(this.labelMaius_Click);
             // 
             // labelUpper
@@ -93,31 +93,20 @@ namespace Curso_WindowsForms
             this.labelUpper.Size = new System.Drawing.Size(32, 23);
             this.labelUpper.TabIndex = 6;
             // 
-            // label1
+            // labelLower
             // 
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Location = new System.Drawing.Point(361, 103);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(32, 23);
-            this.label1.TabIndex = 7;
-            // 
-            // buttonInsere
-            // 
-            this.buttonInsere.Location = new System.Drawing.Point(328, 159);
-            this.buttonInsere.Name = "buttonInsere";
-            this.buttonInsere.Size = new System.Drawing.Size(75, 28);
-            this.buttonInsere.TabIndex = 8;
-            this.buttonInsere.Text = "Insere";
-            this.buttonInsere.UseVisualStyleBackColor = true;
-            this.buttonInsere.Click += new System.EventHandler(this.buttonInsere_Click);
+            this.labelLower.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labelLower.Location = new System.Drawing.Point(361, 103);
+            this.labelLower.Name = "labelLower";
+            this.labelLower.Size = new System.Drawing.Size(32, 23);
+            this.labelLower.TabIndex = 7;
             // 
             // Form_DemonstracaoKey
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(409, 281);
-            this.Controls.Add(this.buttonInsere);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelLower);
             this.Controls.Add(this.labelUpper);
             this.Controls.Add(this.labelMaius);
             this.Controls.Add(this.labelMinus);
@@ -125,6 +114,7 @@ namespace Curso_WindowsForms
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.txt_Input);
             this.Name = "Form_DemonstracaoKey";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Demonstracao Evento Key";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -139,7 +129,6 @@ namespace Curso_WindowsForms
         private System.Windows.Forms.Label labelMinus;
         private System.Windows.Forms.Label labelMaius;
         private System.Windows.Forms.Label labelUpper;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button buttonInsere;
+        private System.Windows.Forms.Label labelLower;
     }
 }

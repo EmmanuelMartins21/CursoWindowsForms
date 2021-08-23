@@ -23,15 +23,33 @@ namespace Curso_WindowsForms
         }
 
         private void buttonReset_Click(object sender, EventArgs e)
-        {//limpa as duas caixas com infomações
+        {
+            //limpa as infomações fornecidas e reccebidas
             textBox1.Clear();
             txt_Input.Clear();
+
+            // volta as caixas de maiusculo e minusculo para vazia
+            labelUpper.Text = "";
+            labelLower.Text = "";
         }
 
-        private void buttonInsere_Click(object sender, EventArgs e)
-        {// Botão apenas idealizado, será criado uma lista para guardar esses dados
-            textBox1.Text = txt_Input.Text.ToString();
-            txt_Input.Clear();
+        private void txt_Input_KeyDown(object sender, KeyEventArgs e)
+        {
+            // adiciona uma quebra de linha,faz um comentario com qual tecla foi pressionada 
+            // o responsavel por capturar a tecla pressionada e o KeyCode
+            textBox1.AppendText("\r\n" + "Pressionei uma tecla: " + e.KeyCode + "\r\n");
+
+            //pega o codigo da tecla convertendo a mesma para inteiro. OBS: converção de dados explicita  
+            textBox1.AppendText("\t" + "Codigo da tecla: " + ((int)e.KeyCode) + "\r\n");
+
+            //pega o nome comum da tecla
+            textBox1.AppendText("\t" + "Nome da tecla: " + e.KeyData + "\r\n");
+
+            //Mostra a letra minuscula
+            labelLower.Text = e.KeyCode.ToString().ToLower();
+
+            //Mostra a letra maiuscula
+            labelUpper.Text = e.KeyCode.ToString().ToUpper();
         }
     }
 }
