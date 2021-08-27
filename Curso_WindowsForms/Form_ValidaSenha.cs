@@ -14,6 +14,8 @@ namespace Curso_WindowsForms
 {
     public partial class Form_ValidaSenha : Form
     {
+        // variavel global
+        bool verSenhaTxt = false;
         public Form_ValidaSenha()
         {
             InitializeComponent();
@@ -38,6 +40,39 @@ namespace Curso_WindowsForms
 
             // Imprime a força da senha 
             label_Resultado.Text = forca.ToString();
+
+            //Muda a cor do texto pela força da senha
+            if(label_Resultado.Text == "Inaceitavel" | label_Resultado.Text == "Fraca")
+            {
+                label_Resultado.ForeColor = Color.Red;
+            }
+            else if(label_Resultado.Text == "Aceitavel")
+            {
+                label_Resultado.ForeColor = Color.Blue;
+            }
+            else
+            {
+                label_Resultado.ForeColor = Color.Green;
+            }
+        }
+
+        private void button_VerSenha_Click(object sender, EventArgs e)
+        {
+            if (verSenhaTxt == false)
+            {
+                //Atribui um caracter vazio, que possibilita a visualização da senha
+                textBox_Senha.PasswordChar = '\0';
+                verSenhaTxt = true;
+                button_VerSenha.Text = "Esconder Senha";
+            }
+            else
+            {
+                //Atribui um caracter '*', que impossibilita a visualização da senha
+                textBox_Senha.PasswordChar = '*';
+                verSenhaTxt = false;
+                button_VerSenha.Text = "Ver Senha";
+            }
+            
         }
     }
     public class ChecaForcaSenha
