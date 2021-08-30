@@ -61,6 +61,18 @@
     <Compile Include="Form_DemonstracaoKey.Designer.cs">
       <DependentUpon>Form_DemonstracaoKey.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_Mascara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Mascara.Designer.cs">
+      <DependentUpon>Form_Mascara.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ValidaCPF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ValidaCPF.Designer.cs">
+      <DependentUpon>Form_ValidaCPF.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_ValidaSenha.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +86,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_DemonstracaoKey.resx">
       <DependentUpon>Form_DemonstracaoKey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Mascara.resx">
+      <DependentUpon>Form_Mascara.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ValidaCPF.resx">
+      <DependentUpon>Form_ValidaCPF.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_ValidaSenha.resx">
       <DependentUpon>Form_ValidaSenha.cs</DependentUpon>
