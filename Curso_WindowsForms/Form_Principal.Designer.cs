@@ -40,6 +40,7 @@ namespace Curso_WindowsForms
             // 
             // button_DemonstracaoKey
             // 
+            this.button_DemonstracaoKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.button_DemonstracaoKey.Image = ((System.Drawing.Image)(resources.GetObject("button_DemonstracaoKey.Image")));
             this.button_DemonstracaoKey.Location = new System.Drawing.Point(12, 12);
             this.button_DemonstracaoKey.Name = "button_DemonstracaoKey";
@@ -51,6 +52,7 @@ namespace Curso_WindowsForms
             // 
             // button_HelloWorld
             // 
+            this.button_HelloWorld.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.button_HelloWorld.Image = ((System.Drawing.Image)(resources.GetObject("button_HelloWorld.Image")));
             this.button_HelloWorld.Location = new System.Drawing.Point(132, 12);
             this.button_HelloWorld.Name = "button_HelloWorld";
@@ -62,6 +64,7 @@ namespace Curso_WindowsForms
             // 
             // button_Mascara
             // 
+            this.button_Mascara.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.button_Mascara.Image = ((System.Drawing.Image)(resources.GetObject("button_Mascara.Image")));
             this.button_Mascara.Location = new System.Drawing.Point(252, 12);
             this.button_Mascara.Name = "button_Mascara";
@@ -73,6 +76,7 @@ namespace Curso_WindowsForms
             // 
             // button_ValidaCPF
             // 
+            this.button_ValidaCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.button_ValidaCPF.Image = ((System.Drawing.Image)(resources.GetObject("button_ValidaCPF.Image")));
             this.button_ValidaCPF.Location = new System.Drawing.Point(12, 66);
             this.button_ValidaCPF.Name = "button_ValidaCPF";
@@ -84,6 +88,7 @@ namespace Curso_WindowsForms
             // 
             // button_ValidaCPF2
             // 
+            this.button_ValidaCPF2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.button_ValidaCPF2.Image = ((System.Drawing.Image)(resources.GetObject("button_ValidaCPF2.Image")));
             this.button_ValidaCPF2.Location = new System.Drawing.Point(132, 66);
             this.button_ValidaCPF2.Name = "button_ValidaCPF2";
@@ -95,6 +100,7 @@ namespace Curso_WindowsForms
             // 
             // button_ValidaSenha
             // 
+            this.button_ValidaSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_ValidaSenha.Image = ((System.Drawing.Image)(resources.GetObject("button_ValidaSenha.Image")));
             this.button_ValidaSenha.Location = new System.Drawing.Point(251, 66);
             this.button_ValidaSenha.Name = "button_ValidaSenha";
