@@ -2,7 +2,7 @@
 O objetivo desse repositorio é apresentar a minha evolução nas construções de varias aplicações Windows Forms para a formação da plataforma 
 [Alura]( https://cursos.alura.com.br/course/windows-forms-csharp-formularios-componentes-eventos 'Alura').
 ## Objetivo da aplicação
-Essa é uma aplicação Windows Forms composta por por 7 formularios, sendo 6 independentes e 1 para interliga-los, fazendo assim um menu de Forms. o Layout foi inpirado pelo curso, porém fiz algumas modificações. O formulario principal ficou dessa forma: <br>
+Essa é uma aplicação Windows Forms composta por por 7 formulários, sendo 6 independentes e 1 para interliga-los, fazendo assim um menu de Forms. O layout foi inpirado pelo curso, porém fiz algumas modificações. O formulário principal ficou dessa forma: <br>
 ![image](https://github.com/EmmanuelMartins21/CursoWindowsForms/blob/master/Aplica%C3%A7%C3%A3o_Principal.PNG)<br>
 
 Cada aba trás de um comportamento possível dentro do WindowsForms, varrendo desde mascara à eventos. 
