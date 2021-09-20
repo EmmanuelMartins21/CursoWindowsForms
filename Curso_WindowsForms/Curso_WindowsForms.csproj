@@ -35,6 +35,12 @@
   <PropertyGroup>
     <StartupObject>Curso_WindowsForms.Program</StartupObject>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Frm_Principal.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -49,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class_Uteis.cs" />
     <Compile Include="formHelloWorld.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,11 +74,23 @@
     <Compile Include="Form_Mascara.Designer.cs">
       <DependentUpon>Form_Mascara.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Principal.Designer.cs">
+      <DependentUpon>Form_Principal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_ValidaCPF.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form_ValidaCPF.Designer.cs">
       <DependentUpon>Form_ValidaCPF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ValidaCPF2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ValidaCPF2.Designer.cs">
+      <DependentUpon>Form_ValidaCPF2.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_ValidaSenha.cs">
       <SubType>Form</SubType>
@@ -90,8 +109,14 @@
     <EmbeddedResource Include="Form_Mascara.resx">
       <DependentUpon>Form_Mascara.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form_Principal.resx">
+      <DependentUpon>Form_Principal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_ValidaCPF.resx">
       <DependentUpon>Form_ValidaCPF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ValidaCPF2.resx">
+      <DependentUpon>Form_ValidaCPF2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_ValidaSenha.resx">
       <DependentUpon>Form_ValidaSenha.cs</DependentUpon>
@@ -117,6 +142,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Frm_Principal.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

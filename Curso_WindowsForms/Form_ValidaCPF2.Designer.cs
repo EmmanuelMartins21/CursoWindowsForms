@@ -1,7 +1,7 @@
 ﻿
 namespace Curso_WindowsForms
 {
-    partial class Form_ValidaCPF
+    partial class Form_ValidaCPF2
     {
         /// <summary>
         /// Required designer variable.
@@ -29,9 +29,8 @@ namespace Curso_WindowsForms
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_ValidaCPF));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_ValidaCPF2));
             this.maskedTextBox_CPF = new System.Windows.Forms.MaskedTextBox();
-            this.label_Resultado = new System.Windows.Forms.Label();
             this.button_Reset = new System.Windows.Forms.Button();
             this.button_Valida = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -43,15 +42,6 @@ namespace Curso_WindowsForms
             this.maskedTextBox_CPF.Name = "maskedTextBox_CPF";
             this.maskedTextBox_CPF.Size = new System.Drawing.Size(218, 20);
             this.maskedTextBox_CPF.TabIndex = 0;
-            // 
-            // label_Resultado
-            // 
-            this.label_Resultado.AutoSize = true;
-            this.label_Resultado.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Resultado.Location = new System.Drawing.Point(12, 90);
-            this.label_Resultado.Name = "label_Resultado";
-            this.label_Resultado.Size = new System.Drawing.Size(0, 22);
-            this.label_Resultado.TabIndex = 1;
             // 
             // button_Reset
             // 
@@ -73,19 +63,18 @@ namespace Curso_WindowsForms
             this.button_Valida.UseVisualStyleBackColor = true;
             this.button_Valida.Click += new System.EventHandler(this.button_Valida_Click);
             // 
-            // Form_ValidaCPF
+            // Form_ValidaCPF2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(368, 154);
             this.Controls.Add(this.button_Valida);
             this.Controls.Add(this.button_Reset);
-            this.Controls.Add(this.label_Resultado);
             this.Controls.Add(this.maskedTextBox_CPF);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form_ValidaCPF";
+            this.Name = "Form_ValidaCPF2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Validação CPF ";
+            this.Text = "Validação CPF 2";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -94,7 +83,6 @@ namespace Curso_WindowsForms
         #endregion
 
         private System.Windows.Forms.MaskedTextBox maskedTextBox_CPF;
-        private System.Windows.Forms.Label label_Resultado;
         private System.Windows.Forms.Button button_Reset;
         private System.Windows.Forms.Button button_Valida;
     }

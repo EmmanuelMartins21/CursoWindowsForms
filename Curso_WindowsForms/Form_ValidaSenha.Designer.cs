@@ -29,6 +29,7 @@ namespace Curso_WindowsForms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_ValidaSenha));
             this.textBox_Senha = new System.Windows.Forms.TextBox();
             this.label_Resultado = new System.Windows.Forms.Label();
             this.button_Reset = new System.Windows.Forms.Button();
@@ -82,6 +83,7 @@ namespace Curso_WindowsForms
             this.Controls.Add(this.button_Reset);
             this.Controls.Add(this.label_Resultado);
             this.Controls.Add(this.textBox_Senha);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form_ValidaSenha";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Validação de Senhas";

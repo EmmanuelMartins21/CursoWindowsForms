@@ -29,6 +29,7 @@ namespace Curso_WindowsForms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Mascara));
             this.maskedTextBox = new System.Windows.Forms.MaskedTextBox();
             this.label_Conteudo = new System.Windows.Forms.Label();
             this.label_MascaraAtiva = new System.Windows.Forms.Label();
@@ -152,6 +153,7 @@ namespace Curso_WindowsForms
             this.Controls.Add(this.label_MascaraAtiva);
             this.Controls.Add(this.label_Conteudo);
             this.Controls.Add(this.maskedTextBox);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form_Mascara";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Exemplos de máscaras";

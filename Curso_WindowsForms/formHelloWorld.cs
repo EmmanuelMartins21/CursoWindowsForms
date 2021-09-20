@@ -25,7 +25,7 @@ namespace Curso_WindowsForms
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

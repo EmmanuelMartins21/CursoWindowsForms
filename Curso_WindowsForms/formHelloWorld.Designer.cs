@@ -29,6 +29,7 @@ namespace Curso_WindowsForms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formHelloWorld));
             this.label1 = new System.Windows.Forms.Label();
             this.buttonModificaTexto = new System.Windows.Forms.Button();
             this.textBoxModifica = new System.Windows.Forms.TextBox();
@@ -80,6 +81,7 @@ namespace Curso_WindowsForms
             this.Controls.Add(this.textBoxModifica);
             this.Controls.Add(this.buttonModificaTexto);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "formHelloWorld";
             this.Load += new System.EventHandler(this.formHelloWorld_Load);
             this.ResumeLayout(false);
